@@ -22,7 +22,9 @@ if income > 0:
 
 
     # CPP
-    if income <= 74600:
+    if income <= pension_plan:
+        pension_tax = 0
+    elif income <= 74600:
         pension_tax = (income - pension_plan) * (5.95 / 100)
     elif income >= 85000:
         pension_tax = 4646.45
